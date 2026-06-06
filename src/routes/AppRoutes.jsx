@@ -5,7 +5,7 @@ import Register from '../Auth/Register';
 import Home from './../Pages/Home';
 import Catalog from './../Pages/Catalog';
 import Seller from './../Pages/Seller';
-import Profile from './../Auth/Profile';
+import Profile from './../Pages/Profile';
 
 
 

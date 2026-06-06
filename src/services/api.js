@@ -2,6 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
   baseURL: "https://backend-eco-market.vercel.app/api",
+  // baseURL: "http://localhost:3001/api",
 });
 
 api.interceptors.request.use((config) => {

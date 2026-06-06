@@ -4,7 +4,7 @@ import Catalog from "../Pages/Catalog";
 import Favorites from "../Pages/Favorites";
 import Cart from "../Pages/Cart";
 import SellerPanel from "../Pages/SellerPanel";
-import Profile from "../Auth/Profile";
+import Profile from "../Pages/Profile";
 import { useState } from "react";
 
 function AppShell({ setIsAuth }) {

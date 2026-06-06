@@ -14,6 +14,7 @@ function Cart() {
     removeFromCart,
     updateQuantity,
     clearCart,
+    getTotalItems
   } = useCart();
 
   const subtotal = cartItems.reduce(
@@ -121,10 +122,7 @@ function Cart() {
                     onClick={() =>
                       updateQuantity(
                         item._id,
-                        Math.max(
-                          1,
                           item.quantity - 1
-                        )
                       )
                     }
                     className="bg-gray-100 p-2 rounded"
