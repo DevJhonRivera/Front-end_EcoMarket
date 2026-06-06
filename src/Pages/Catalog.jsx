@@ -5,8 +5,10 @@ import ProductCard from "../components/ProductCard";
 import {
   getProducts,
 } from "../services/productService";
+import { useCart } from "../context/CartContext";
 
 function Catalog() {
+  const {addToCart}= useCart();
 
   const [products, setProducts] =
     useState([]);
@@ -57,6 +59,7 @@ function Catalog() {
         <ProductCard
           key={product._id}
           product={product}
+          onAddToCart={addToCart}
         />
 
       ))}

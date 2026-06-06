@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import Swal from "sweetalert2";
 
 const CartContext = createContext();
 
@@ -20,26 +21,39 @@ export const CartProvider = ({ children }) => {
   };
 
   // Agregar producto
-  const addToCart = (product, qty = 1) => {
-    const existing = cartItems.find(
-      (item) => item._id === product._id
+ const addToCart = (product, qty = 1) => {
+  const existing = cartItems.find(
+    (item) => item._id === product._id
+  );
+
+  let updatedCart;
+
+  if (existing) {
+    updatedCart = cartItems.map((item) =>
+      item._id === product._id
+        ? { ...item, quantity: item.quantity + qty }
+        : item
     );
+  } else {
+    updatedCart = [
+      ...cartItems,
+      { ...product, quantity: qty },
+    ];
+  }
 
-    if (existing) {
-      const updated = cartItems.map((item) =>
-        item._id === product._id
-          ? { ...item, quantity: item.quantity + qty }
-          : item
-      );
-      saveCart(updated);
-    } else {
-      saveCart([
-        ...cartItems,
-        { ...product, quantity: qty },
-      ]);
-    }
-  };
+  saveCart(updatedCart);
 
+  // 👉 ALERTA SIEMPRE
+  Swal.fire({
+    toast: true,
+    position: "top-end",
+    icon: "success",
+    title: `${product.title} agregado`,
+    showConfirmButton: false,
+    timer: 1500,
+    timerProgressBar: true,
+  });
+};
   // Eliminar producto
   const removeFromCart = (id) => {
     const updated = cartItems.filter(
