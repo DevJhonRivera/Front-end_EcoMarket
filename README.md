@@ -11,7 +11,7 @@ Aplicación frontend desarrollada para la gestión y visualización de productos
 * Axios
 * SweetAlert2
 * React Router DOM
-* CSS / Tailwind (según estés usando)
+* CSS / Tailwind 
 
 ---
 
@@ -58,7 +58,7 @@ src/
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
+https://github.com/DevJhonRivera/Front-end_EcoMarket.git
 ```
 
 2. Instalar dependencias:
@@ -80,13 +80,11 @@ npm run dev
 Asegúrate de tener corriendo el backend en:
 
 ```
-http://localhost:5000
+http://localhost:3001
 ```
 
-Y que el archivo `productService.js` tenga la URL correcta:
-
 ```javascript
-const API_URL = "http://localhost:5000/api/products";
+const API_URL = "http://localhost:3001/api/products";
 ```
 
 ---
@@ -99,28 +97,6 @@ El proyecto incluye pruebas de software para garantizar la calidad:
 * ✅ Pruebas de integración
 * ✅ Pruebas End-to-End (Playwright)
 
-Para ejecutar las pruebas:
-
-```bash
-npm test
-```
-
-Para ver cobertura:
-
-```bash
-npm run test -- --coverage
-```
-
----
-
-## 📸 Capturas (opcional)
-
-Puedes agregar aquí imágenes de tu aplicación:
-
-```
-/assets/catalog.png
-/assets/cart.png
-```
 
 ---
 
@@ -132,11 +108,6 @@ Puedes agregar aquí imágenes de tu aplicación:
 
 ---
 
-## 👨‍💻 Autor
-
-Desarrollado por: **Jhon Rivera**
-
----
 
 ## 📄 Licencia
 
