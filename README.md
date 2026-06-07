@@ -51,6 +51,9 @@ https://github.com/DevJhonRivera/Back-End-ProyectoSoftware
 * Express.js
 * JavaScript
 
+## Base de Datos
+* MongoDb Atlas
+
 ## Control de versiones
 
 * Git
@@ -62,7 +65,8 @@ https://github.com/DevJhonRivera/Back-End-ProyectoSoftware
 
 ## Despliegue
 
-* Vercel
+* Vercel (Frontend)
+* Render (Backend)
 
 ---
 
