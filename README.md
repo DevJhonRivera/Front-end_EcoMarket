@@ -1,16 +1,114 @@
-# React + Vite
+# 🌱 EcoMarket Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación frontend desarrollada para la gestión y visualización de productos en una tienda virtual ecológica. Permite a los usuarios navegar por un catálogo, visualizar productos y gestionar un carrito de compras de forma interactiva.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tecnologías utilizadas
 
-## React Compiler
+* React.js
+* Vite
+* Axios
+* SweetAlert2
+* React Router DOM
+* CSS / Tailwind 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📦 Funcionalidades principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 🛍️ Visualización de catálogo de productos
+* 🔍 Búsqueda de productos
+* 👁️ Vista detallada de productos
+* 🛒 Agregar productos al carrito
+* ❌ Eliminar productos del carrito
+* 🔔 Notificaciones con SweetAlert
+* 🔄 Consumo de API (backend con Node.js y MongoDB)
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+src/
+│── components/
+│   ├── ProductCard.jsx
+│   ├── Navbar.jsx
+│   └── Cart.jsx
+│
+│── pages/
+│   ├── Home.jsx
+│   ├── Catalog.jsx
+│   └── ProductDetail.jsx
+│
+│── services/
+│   └── productService.js
+│
+│── context/
+│   └── CartContext.jsx
+│
+│── App.jsx
+│── main.jsx
+```
+
+---
+
+## ⚙️ Instalación y ejecución
+
+1. Clonar el repositorio:
+
+```bash
+https://github.com/DevJhonRivera/Front-end_EcoMarket.git
+```
+
+2. Instalar dependencias:
+
+```bash
+npm install
+```
+
+3. Ejecutar el proyecto:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🔗 Configuración del backend
+
+Asegúrate de tener corriendo el backend en:
+
+```
+http://localhost:3001
+```
+
+```javascript
+const API_URL = "http://localhost:3001/api/products";
+```
+
+---
+
+## 🧪 Pruebas
+
+El proyecto incluye pruebas de software para garantizar la calidad:
+
+* ✅ Pruebas unitarias (Jest)
+* ✅ Pruebas de integración
+* ✅ Pruebas End-to-End (Playwright)
+
+
+---
+
+## 📌 Estado del proyecto
+
+✔ En desarrollo
+✔ Funcionalidades principales implementadas
+✔ Integración frontend-backend completada
+
+---
+
+
+## 📄 Licencia
+
+Este proyecto es de uso académico.
