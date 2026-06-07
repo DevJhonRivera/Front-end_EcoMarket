@@ -32,7 +32,7 @@ https://github.com/DevJhonRivera/Back-End-ProyectoSoftware
 
 ---
 
-# 🛠 Tecnologías Utilizadas
+# 🛠️ Tecnologías Utilizadas
 
 ## Frontend
 
