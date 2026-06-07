@@ -117,25 +117,43 @@ El frontend se encarga de la interacción con el usuario mientras que el backend
 
 src/
 
+Auth/
+* Login.jsx
+* Register.jsx
+
 components/
 
 * ProductCard.jsx
 * Navbar.jsx
 * Cart.jsx
+* ProductModal.jsx
+* CreateproductModal.jsx
 
 pages/
 
 * Home.jsx
 * Catalog.jsx
-* ProductDetail.jsx
+* Cart.jsx
+* Profile.jsx
+* Seller.jsx
+* SellerPanel.jsx
 
 services/
 
 * productService.js
+* api.js
+* AuthScren.jsx
+* AuthService.jsx
+* userService.js
+
+routes/
+
+* AppRoutes.js
 
 context/
 
 * CartContext.jsx
+* AuthContext.jsx
 
 App.jsx
 
