@@ -6,7 +6,7 @@ export const getMyProducts = async () => {
   const response = await api.get(
     "/products/my-products",
     {
-      headers: {
+      headers: {  
         Authorization: `Bearer ${token}`,
       },
     }
